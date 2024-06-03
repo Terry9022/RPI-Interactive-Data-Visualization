@@ -13,12 +13,11 @@ const Home = () => {
             COMM-6880 Interactive Data Visualization
           </h2>
           <p className="mb-4">
-            Since the audience is primarily those already pursuing studies or
-            job opportunities in the computer science field, the website and
-            data visualizations should focus on computer science, such as using
-            CS-related terms that the audience would be familiar with, and
-            provide useful information about job potential in the computer
-            science field.
+            Having a website that shows and compares the different fields within
+            CS and shows all the impacts of GenAI on each field, with
+            informative data visualizations that show how the industry has
+            changed in recent years and the level of success that can be
+            achieved in the present state of the industry.
           </p>
         </div>
       </div>
