@@ -127,6 +127,9 @@ const LayoffsByYearChart = () => {
       title: {
         display: true,
         text: "Job Layoffs by Year and Career",
+        font: {
+          size: 18,
+        },
       },
       annotation: {
         annotations: showChatGPTLine
@@ -180,15 +183,18 @@ const LayoffsByYearChart = () => {
   };
 
   return (
-    <div>
-      <div>
-        <label>
+    <div className="relative">
+      <div className="absolute top-4 right-4 z-10">
+        <label className="flex items-center space-x-2 cursor-pointer">
           <input
             type="checkbox"
+            className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
             checked={showChatGPTLine}
             onChange={handleToggleChatGPTLine}
           />
-          Show ChatGPT Release Line
+          <span className="text-gray-700 font-medium select-none">
+            Show ChatGPT Release Line
+          </span>
         </label>
       </div>
       <Line data={data} options={options} />
