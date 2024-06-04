@@ -8,7 +8,7 @@ const Home = () => {
           COMM-6880 Interactive Data Visualization
         </h1>
         <Header />
-        <div className="my-8">
+        <div className="my-4">
           <h2 className="text-2xl font-bold mb-4">
             COMM-6880 Interactive Data Visualization
           </h2>
