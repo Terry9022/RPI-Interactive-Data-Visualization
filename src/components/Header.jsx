@@ -8,7 +8,7 @@ function Header() {
           to="/"
           className={`inline-block p-4 rounded-t-lg ${
             location.pathname === "/"
-              ? "text-blue-600 bg-gray-100 active dark:bg-gray-800 dark:text-blue-500"
+              ? "text-blue-600 bg-gray-100 active"
               : "hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
           }`}
         >
@@ -20,8 +20,8 @@ function Header() {
           to="/salaries"
           className={`inline-block p-4 rounded-t-lg ${
             location.pathname === "/salaries"
-              ? "text-blue-600 bg-gray-100 active dark:bg-gray-800 dark:text-blue-500"
-              : "hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              ? "text-blue-600 bg-gray-100 active "
+              : "hover:text-gray-600 hover:bg-gray-50 "
           }`}
         >
           Salaries among CS careers
@@ -32,8 +32,8 @@ function Header() {
           to="/competitiveness"
           className={`inline-block p-4 rounded-t-lg ${
             location.pathname === "/competitiveness"
-              ? "text-blue-600 bg-gray-100 active dark:bg-gray-800 dark:text-blue-500"
-              : "hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              ? "text-blue-600 bg-gray-100 active "
+              : "hover:text-gray-600 hover:bg-gray-50 "
           }`}
         >
           Competitiveness of entry-level jobs
@@ -44,8 +44,8 @@ function Header() {
           to="/influence-genai"
           className={`inline-block p-4 rounded-t-lg ${
             location.pathname === "/influence-genai"
-              ? "text-blue-600 bg-gray-100 active dark:bg-gray-800 dark:text-blue-500"
-              : "hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              ? "text-blue-600 bg-gray-100 active "
+              : "hover:text-gray-600 hover:bg-gray-50 "
           }`}
         >
           Influence of GenAI on job opportunities
@@ -56,8 +56,8 @@ function Header() {
           to="/job-postings"
           className={`inline-block p-4 rounded-t-lg ${
             location.pathname === "/job-postings"
-              ? "text-blue-600 bg-gray-100 active dark:bg-gray-800 dark:text-blue-500"
-              : "hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
+              ? "text-blue-600 bg-gray-100 active "
+              : "hover:text-gray-600 hover:bg-gray-50 "
           }`}
         >
           Job postings in the CS field
