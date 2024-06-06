@@ -57,37 +57,19 @@ const ImpactOfAIPage = () => {
         <h1 className="text-4xl font-bold text-white mb-8 mt-12">
           Impact of AI on the Computer Science Industry
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div className="col-span-2">
+        <div>
+          <div>
             <h2 className="text-2xl font-bold text-white mb-4">
               Brief History of Generative AI
             </h2>
-            <p className="text-white text-lg mb-4">
-              Generative AI has its roots in the field of machine learning and
-              has gained significant popularity in recent years. It involves
-              training AI models on vast amounts of data to generate new
-              content, such as images, text, and audio, that resembles the
-              training data.
-            </p>
-            <p className="text-white text-lg mb-4">
-              The rise of generative AI can be attributed to advancements in
-              deep learning architectures, increased computational power, and
-              the availability of large datasets. Some notable milestones in the
-              development of generative AI include the introduction of
-              Generative Adversarial Networks (GANs) in 2014 and the release of
-              powerful language models like GPT-3 by OpenAI.
-            </p>
-          </div>
-          <div className="col-span-3">
             <img
               src="4.png"
               alt="History of Generative AI"
               className="w-full mb-4 rounded"
               style={{
-                width: "950px",
+                width: "80%",
                 height: "auto",
-                top: "80px",
-                position: "relative",
+                paddingLeft: "100px",
               }}
             />
           </div>
