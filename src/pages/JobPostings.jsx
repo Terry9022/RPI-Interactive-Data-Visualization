@@ -1,3 +1,5 @@
+import JobPostingsChart from "../charts/JobPostingsChart";
+import JobPostingsPolarChart from "../charts/JobPostingsPolarChart";
 import BackButton from "../components/BackButton";
 import Header from "../components/Header";
 
@@ -12,6 +14,14 @@ const JobPostings = () => {
           </h1>
           <Header />
         </div>
+      </div>
+      <div
+        style={{ width: "70%", height: "800px" }}
+        className="flex justify-center items-center ml-[15%]"
+      >
+        <JobPostingsChart />
+        <div className="m-[20px]"></div>
+        <JobPostingsPolarChart />
       </div>
     </div>
   );

@@ -154,7 +154,7 @@ const LayoffsByYearChart = () => {
           title: (context) => {
             const date = context[0].label;
             const date2 = new Date(date.slice(0, 11));
-            return date2.toLocaleDateString();
+            return date2.toISOString().split("T")[0];
           },
           label: (context) => {
             const label = context.dataset.label || "";
