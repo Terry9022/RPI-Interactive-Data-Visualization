@@ -12,7 +12,7 @@ function Header() {
               : "hover:text-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:text-gray-300"
           }`}
         >
-          Home
+          Landing Page
         </Link>
       </li>
       <li className="me-2">
