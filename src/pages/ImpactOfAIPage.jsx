@@ -57,8 +57,8 @@ const ImpactOfAIPage = () => {
         <h1 className="text-4xl font-bold text-white mb-8 mt-12">
           Impact of AI on the Computer Science Industry
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div className="col-span-2">
             <h2 className="text-2xl font-bold text-white mb-4">
               Brief History of Generative AI
             </h2>
@@ -78,12 +78,17 @@ const ImpactOfAIPage = () => {
               powerful language models like GPT-3 by OpenAI.
             </p>
           </div>
-          <div>
+          <div className="col-span-3">
             <img
               src="4.png"
               alt="History of Generative AI"
               className="w-full mb-4 rounded"
-              style={{ width: "auto", height: "200px" }}
+              style={{
+                width: "950px",
+                height: "auto",
+                top: "80px",
+                position: "relative",
+              }}
             />
           </div>
         </div>
