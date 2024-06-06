@@ -80,9 +80,10 @@ const ImpactOfAIPage = () => {
           </div>
           <div>
             <img
-              src="path/to/history-image.jpg"
+              src="4.png"
               alt="History of Generative AI"
               className="w-full mb-4 rounded"
+              style={{ width: "auto", height: "200px" }}
             />
           </div>
         </div>

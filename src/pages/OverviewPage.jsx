@@ -81,14 +81,10 @@ const OverviewPage = () => {
           </div>
           <div>
             <img
-              src="path/to/image1.jpg"
+              src="2.jpeg"
               alt="CS Industry"
               className="w-full mb-4 rounded"
-            />
-            <img
-              src="path/to/image2.jpg"
-              alt="CS Applications"
-              className="w-full rounded"
+              style={{ width: "auto", height: "400px" }}
             />
           </div>
         </div>
