@@ -1,3 +1,5 @@
+import SalariesBarChart from "../charts/SalariesBarChart";
+import SalariesScatterChart from "../charts/SalariesScatterChart";
 import BackButton from "../components/BackButton";
 import Header from "../components/Header";
 
@@ -12,6 +14,11 @@ const Salaries = () => {
           </h1>
           <Header />
         </div>
+      </div>
+      <div style={{ width: "60%", height: "600px", margin: "auto" }}>
+        <SalariesBarChart/>
+        <div className="m-[30px]"></div>
+        <SalariesScatterChart/>
       </div>
     </div>
   );
