@@ -1,3 +1,5 @@
+import CompetitivenessScatterChart from "../charts/CompetitivenessScatterChart";
+import CompetitivenessPolarAreaChart from "../charts/CompetitivenessPolarAreaChart";
 import BackButton from "../components/BackButton";
 import Header from "../components/Header";
 
@@ -12,6 +14,11 @@ const Competitiveness = () => {
           </h1>
           <Header />
         </div>
+      </div>
+      <div style={{ width: "60%", height: "600px", margin: "auto" }}>
+        <CompetitivenessScatterChart/>
+        <div className="m-[30px]"></div>
+        <CompetitivenessPolarAreaChart/>
       </div>
     </div>
   );

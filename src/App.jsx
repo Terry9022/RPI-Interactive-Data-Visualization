@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import "./index.css";
-import Competitiveness from "./pages/Competitivenessl";
+import Competitiveness from "./pages/Competitiveness";
 import Salaries from "./pages/Salaries";
 import InfluenceGenAI from "./pages/InfluenceGenAI ";
 import JobPostings from "./pages/JobPostings";
