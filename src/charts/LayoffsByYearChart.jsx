@@ -53,7 +53,7 @@ const LayoffsByYearChart = () => {
         ],
         borderColor: "rgba(75, 192, 192, 1)",
         backgroundColor: "rgba(75, 192, 192, 0.2)",
-        fill: true,
+        fill: false,
       },
       {
         label: "Data Scientist",
@@ -68,7 +68,7 @@ const LayoffsByYearChart = () => {
         ],
         borderColor: "rgba(255, 99, 132, 1)",
         backgroundColor: "rgba(255, 99, 132, 0.2)",
-        fill: true,
+        fill: false,
       },
       {
         label: "UI/UX Designer",
@@ -83,7 +83,7 @@ const LayoffsByYearChart = () => {
         ],
         borderColor: "rgba(54, 162, 235, 1)",
         backgroundColor: "rgba(54, 162, 235, 0.2)",
-        fill: true,
+        fill: false,
       },
       {
         label: "Product Manager",
@@ -98,7 +98,7 @@ const LayoffsByYearChart = () => {
         ],
         borderColor: "rgba(255, 206, 86, 1)",
         backgroundColor: "rgba(255, 206, 86, 0.2)",
-        fill: true,
+        fill: false,
       },
       {
         label: "DevOps Engineer",
@@ -113,7 +113,7 @@ const LayoffsByYearChart = () => {
         ],
         borderColor: "rgba(153, 102, 255, 1)",
         backgroundColor: "rgba(153, 102, 255, 0.2)",
-        fill: true,
+        fill: false,
       },
     ],
   };
@@ -138,12 +138,15 @@ const LayoffsByYearChart = () => {
                 type: "line",
                 scaleID: "x",
                 value: "2022-11-30",
-                borderColor: "red",
+                borderColor: "black",
                 borderWidth: 2,
                 label: {
                   display: true,
                   content: "ChatGPT Release",
-                  position: "top",
+                  position: "bottom",
+                  font: {
+                    size: 10,
+                  },
                 },
               },
             ]
