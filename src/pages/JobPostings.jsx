@@ -17,7 +17,7 @@ const JobPostings = () => {
       </div>
       <div
         style={{ width: "70%", height: "800px" }}
-        className="flex justify-center items-center ml-[15%]"
+        className="flex-col justify-center items-center ml-[20%]"
       >
         <JobPostingsChart />
         <div className="m-[20px]"></div>
