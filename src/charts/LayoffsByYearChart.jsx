@@ -28,6 +28,11 @@ Chart.register(
 
 const LayoffsByYearChart = () => {
   const [showChatGPTLine, setShowChatGPTLine] = useState(true);
+  const [showSoftwareEngineer, setShowSoftwareEngineer] = useState(true);
+  const [showDataScientist, setShowDataScientist] = useState(true);
+  const [showUIUXDesigner, setShowUIUXDesigner] = useState(true);
+  const [showProductManager, setShowProductManager] = useState(true);
+  const [showDevOpsEngineer, setShowDevOpsEngineer] = useState(true);
 
   const data = {
     labels: [
@@ -40,7 +45,7 @@ const LayoffsByYearChart = () => {
       "2024-01-01",
     ],
     datasets: [
-      {
+      showSoftwareEngineer && {
         label: "Software Engineer",
         data: [
           { x: "2019-01-01", y: 500 },
@@ -55,7 +60,7 @@ const LayoffsByYearChart = () => {
         backgroundColor: "rgba(75, 192, 192, 0.2)",
         fill: false,
       },
-      {
+      showDataScientist && {
         label: "Data Scientist",
         data: [
           { x: "2019-01-01", y: 300 },
@@ -70,7 +75,7 @@ const LayoffsByYearChart = () => {
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         fill: false,
       },
-      {
+      showUIUXDesigner && {
         label: "UI/UX Designer",
         data: [
           { x: "2019-01-01", y: 200 },
@@ -85,7 +90,7 @@ const LayoffsByYearChart = () => {
         backgroundColor: "rgba(54, 162, 235, 0.2)",
         fill: false,
       },
-      {
+      showProductManager && {
         label: "Product Manager",
         data: [
           { x: "2019-01-01", y: 100 },
@@ -100,7 +105,7 @@ const LayoffsByYearChart = () => {
         backgroundColor: "rgba(255, 206, 86, 0.2)",
         fill: false,
       },
-      {
+      showDevOpsEngineer && {
         label: "DevOps Engineer",
         data: [
           { x: "2019-01-01", y: 150 },
@@ -115,7 +120,7 @@ const LayoffsByYearChart = () => {
         backgroundColor: "rgba(153, 102, 255, 0.2)",
         fill: false,
       },
-    ],
+    ].filter(Boolean),
   };
 
   const options = {
@@ -186,21 +191,85 @@ const LayoffsByYearChart = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="absolute top-4 right-4 z-10">
-        <label className="flex items-center space-x-2 cursor-pointer">
-          <input
-            type="checkbox"
-            className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
-            checked={showChatGPTLine}
-            onChange={handleToggleChatGPTLine}
-          />
-          <span className="text-gray-700 font-medium select-none">
-            Show ChatGPT Release Line
-          </span>
-        </label>
+    <div className="flex" style={{ width: "100%", minWidth: "1200px" }}>
+      <div className="w-11/12 md:w-[1000px]">
+        <div className="relative top-8 left-10">
+          <label className="flex items-center space-x-2 cursor-pointer">
+            <input
+              type="checkbox"
+              className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+              checked={showChatGPTLine}
+              onChange={handleToggleChatGPTLine}
+            />
+            <span className="text-gray-700 font-medium select-none">
+              Show ChatGPT Release Line
+            </span>
+          </label>
+        </div>
+        <Line data={data} options={options} />
       </div>
-      <Line data={data} options={options} />
+      <div className="w-[280px] pl-4 relative left-2">
+        <div className="bg-white shadow-md rounded-md p-4 relative top-[120px]">
+          <h3 className="text-lg font-semibold mb-2">Filters</h3>
+          <div className="space-y-2">
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                checked={showSoftwareEngineer}
+                onChange={() => setShowSoftwareEngineer(!showSoftwareEngineer)}
+              />
+              <span className="text-gray-700 font-medium select-none">
+                Software Engineer
+              </span>
+            </label>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                checked={showDataScientist}
+                onChange={() => setShowDataScientist(!showDataScientist)}
+              />
+              <span className="text-gray-700 font-medium select-none">
+                Data Scientist
+              </span>
+            </label>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                checked={showUIUXDesigner}
+                onChange={() => setShowUIUXDesigner(!showUIUXDesigner)}
+              />
+              <span className="text-gray-700 font-medium select-none">
+                UI/UX Designer
+              </span>
+            </label>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                checked={showProductManager}
+                onChange={() => setShowProductManager(!showProductManager)}
+              />
+              <span className="text-gray-700 font-medium select-none">
+                Product Manager
+              </span>
+            </label>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="checkbox"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                checked={showDevOpsEngineer}
+                onChange={() => setShowDevOpsEngineer(!showDevOpsEngineer)}
+              />
+              <span className="text-gray-700 font-medium select-none">
+                DevOps Engineer
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

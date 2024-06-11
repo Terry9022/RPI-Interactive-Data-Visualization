@@ -1,5 +1,4 @@
 import JobPostingsChart from "../charts/JobPostingsChart";
-import JobPostingsPolarChart from "../charts/JobPostingsPolarChart";
 import BackButton from "../components/BackButton";
 import Header from "../components/Header";
 
