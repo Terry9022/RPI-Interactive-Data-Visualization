@@ -85,7 +85,7 @@ const SalariesScatterChart = () => {
                     display: true,
                     text: "Average Amount of Applicants",
                     font: {
-                        size: 16
+                        size: 14
                     },
                     padding: 30
                 }
@@ -113,8 +113,9 @@ const SalariesScatterChart = () => {
                 display: true,
                 text: "Average Amount of Experience Required vs. Average Amount of Applicants, by Profession",
                 font: {
-                    size: 18,
+                    size: 14,
                 },
+                align: "end"
             },
             tooltip: {
                 callbacks: {

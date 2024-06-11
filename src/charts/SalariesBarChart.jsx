@@ -1,8 +1,8 @@
 import { Bar } from "react-chartjs-2";
-import { Chart } from "chart.js";
 import { useRef } from "react";
+import { Chart, CategoryScale, BarElement } from "chart.js";
 
-Chart.register();
+Chart.register(CategoryScale, BarElement);
 
 const SalariesBarChart = () => {
     const chartRef = useRef(null)
