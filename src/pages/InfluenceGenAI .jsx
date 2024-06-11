@@ -1,4 +1,3 @@
-import LayoffsByJobRoleChart from "../charts/LayoffsByJobRoleChart";
 import LayoffsByYearChart from "../charts/LayoffsByYearChart";
 import BackButton from "../components/BackButton";
 import Header from "../components/Header";
@@ -15,7 +14,7 @@ const InfluenceGenAI = () => {
           <Header />
         </div>
       </div>
-      <div style={{ width: "60%", height: "600px", margin: "auto" }}>
+      <div style={{ width: "70%", height: "600px", margin: "auto" }}>
         {/* <LayoffsByJobRoleChart /> */}
         <div className="m-[30px]"></div>
         <LayoffsByYearChart />
