@@ -8,7 +8,7 @@ const ImpactOfAIPage = () => {
       style={{ backgroundImage: "url('background-image.jpg')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <nav className="absolute top-0 left-0 right-0 p-4 z-10">
+      <nav className="absolute top-0 left-0 right-0 p-4 z-10 text-xl">
         <ul className="flex justify-between">
           <li>
             <div className="flex">
@@ -59,26 +59,29 @@ const ImpactOfAIPage = () => {
         </h1>
         <div>
           <div>
-            <h2 className="text-2xl font-bold text-white mb-4">
-              Brief History of Generative AI
-            </h2>
             <img
               src="4.png"
               alt="History of Generative AI"
-              className="w-full mb-4 rounded"
+              className="w-full mb-4 rounded "
               style={{
                 width: "80%",
                 height: "auto",
-                paddingLeft: "100px",
+                marginLeft: "auto",
+                marginRight: "auto",
               }}
             />
           </div>
         </div>
-        <div className="mt-8">
-          <h2 className="text-2xl font-bold text-white mb-4">
-            Impact on the Computer Science Industry
-          </h2>
-          <p className="text-white text-lg mb-4">
+        <div
+          className="mb-14 mt-10 text-justify"
+          style={{
+            width: "80%",
+            height: "auto",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          <p className="text-white text-2xl mb-4">
             Generative AI has brought about significant changes in the computer
             science industry, with both positive and negative impacts. On the
             positive side, generative AI has opened up new possibilities for
@@ -86,19 +89,17 @@ const ImpactOfAIPage = () => {
             and music. It has also enabled the automation of certain tasks,
             improving efficiency and productivity.
           </p>
-          <p className="text-white text-lg mb-4">
+          <p className="text-white text-2xl mb-4">
             However, the rise of generative AI has also raised concerns about
             job displacement and the potential misuse of the technology. As AI
             models become more advanced, there is a risk of certain roles
             becoming automated, leading to job losses in some sectors.
-            Additionally, the ability to generate realistic content has raised
-            issues related to deepfakes and the spread of misinformation.
           </p>
         </div>
         <div className="mt-12 text-center">
           <Link
             to="/purpose"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-6 px-6 rounded text-xl"
           >
             Next: Purpose of Website
           </Link>

@@ -7,7 +7,7 @@ const LandingPage = () => {
       style={{ backgroundImage: "url('background-image.jpg')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <nav className="absolute top-0 left-0 right-0 p-4 z-10">
+      <nav className="absolute top-0 left-0 right-0 p-4 z-10 text-xl">
         <ul className="flex justify-end space-x-4">
           <li>
             <Link to="/job-postings" className="text-white hover:text-gray-300">
@@ -47,7 +47,7 @@ const LandingPage = () => {
         </p>
         <Link
           to="/overview"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded text-xl"
         >
           Explore
         </Link>
