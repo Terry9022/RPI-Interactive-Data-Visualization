@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 bg-white">
+    <ul className="flex flex-wrap text-md font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 bg-white mt-6">
       <li className="me-2">
         <Link
           to="/"
