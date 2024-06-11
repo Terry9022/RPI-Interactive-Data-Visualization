@@ -18,7 +18,7 @@ const Competitiveness = () => {
       <div style={{ width: "60%", height: "600px", margin: "auto" }}>
         <CompetitivenessScatterChart />
         <div className="m-[30px]"></div>
-        <CompetitivenessPolarAreaChart />
+        {/* <CompetitivenessPolarAreaChart /> */}
       </div>
     </div>
   );

@@ -17,11 +17,11 @@ const JobPostings = () => {
       </div>
       <div
         style={{ width: "70%", height: "800px" }}
-        className="flex-col justify-center items-center ml-[20%]"
+        className="flex-col justify-center items-center ml-[25%]"
       >
         <JobPostingsChart />
         <div className="m-[20px]"></div>
-        <JobPostingsPolarChart />
+        {/* <JobPostingsPolarChart /> */}
       </div>
     </div>
   );

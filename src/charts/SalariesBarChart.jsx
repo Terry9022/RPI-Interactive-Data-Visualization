@@ -7,36 +7,40 @@ Chart.register();
 const SalariesBarChart = () => {
     const chartRef = useRef(null)
 
-    var averageData = [100000, 120000, 80000, 150000, 130000]
-    var maximumData = [180000, 175000, 120000, 200000, 150000]
+    var averageData = [[80000,120000], [80000,100000], [60000,80000], [150000,200000], [75000,100000]]
+    var maximumData = [[100000,180000], [120000,175000], [75000,120000], [200000,250000], [100000,150000]]
     var dataState = "average"
 
     const data = {
         labels: [
-            "Software Engineer",
-            "Data Scientist",
-            "UI/UX Designer",
-            "Product Manager",
-            "DevOps Engineer",
+            "Junior Level",
+            "Senior Level"
         ],
         datasets: [
             {
-                data: averageData,
-                backgroundColor: [
-                    "rgb(109, 101, 82)",
-                    "rgb(143, 139, 102)",
-                    "rgb(217, 80, 48)",
-                    "rgb(89, 35, 33)",
-                    "rgb(45, 87, 44)"
-                ],
-                borderColor: [
-                    "rgb(109, 101, 82)",
-                    "rgb(143, 139, 102)",
-                    "rgb(217, 80, 48)",
-                    "rgb(89, 35, 33)",
-                    "rgb(45, 87, 44)"
-                ],
-                borderWidth: 1
+                label: "Software Engineer",
+                data: averageData[0],
+                backgroundColor: "rgba(75, 192, 192, 0.6)"
+            },
+            {
+                label: "Data Scientist",
+                data: averageData[1],
+                backgroundColor: "rgba(255, 99, 132, 0.6)"
+            },
+            {
+                label: "UI/UX Designer",
+                data: averageData[2],
+                backgroundColor: "rgba(54, 162, 235, 0.6)"
+            },
+            {
+                label: "Product Manager",
+                data: averageData[3],
+                backgroundColor: "rgba(255, 206, 86, 0.6)"
+            },
+            {
+                label: "DevOps Engineer",
+                data: averageData[4],
+                backgroundColor: "rgba(153, 102, 255, 0.6)"
             }
         ],
     };
@@ -44,7 +48,9 @@ const SalariesBarChart = () => {
     function toggleChartData() {
         if(dataState == "average") {
             dataState = "maximum"
-            chartRef.current.data.datasets[0].data = maximumData
+            for (var i = 0; i < chartRef.current.data.datasets.length; i++) {
+                chartRef.current.data.datasets[i].data = maximumData[i]
+            }
             chartRef.current.options.plugins.title.text = "Salary Maximums by Profession"
             chartRef.current.options.scales.y.title.text = "Maximum Salary Amount ($/year)"
             document.getElementById("toggleBarChartData").innerHTML = "Compare Salary Averages"
@@ -52,7 +58,9 @@ const SalariesBarChart = () => {
         }
         else if(dataState == "maximum") {
             dataState = "average"
-            chartRef.current.data.datasets[0].data = averageData
+            for (var i = 0; i < chartRef.current.data.datasets.length; i++) {
+                chartRef.current.data.datasets[i].data = averageData[i]
+            }
             chartRef.current.options.plugins.title.text = "Salary Averages by Profession"
             chartRef.current.options.scales.y.title.text = "Average Salary Amount ($/year)"
             document.getElementById("toggleBarChartData").innerHTML = "Compare Salary Maximums"
@@ -65,7 +73,7 @@ const SalariesBarChart = () => {
         scales: {
             y: {
                 display: true,
-                max: 200000,
+                max: 250000,
                 title: {
                     display: true,
                     text: "Average Salary Amount ($/year)",
@@ -77,9 +85,6 @@ const SalariesBarChart = () => {
             }
         },
         plugins: {
-            legend: {
-                display: false
-            },
             title: {
                 display: true,
                 text: "Salary Averages by Profession",

@@ -17,7 +17,8 @@ const SalariesScatterChart = () => {
                         y: 6
                     },
                 ],
-                backgroundColor: "rgb(109, 101, 82)"
+                backgroundColor: "rgba(75, 192, 192, 0.6)",
+                pointStyle: "circle"
             },
             {
                 label: "Data Scientist",
@@ -27,7 +28,8 @@ const SalariesScatterChart = () => {
                         y: 5
                     },
                 ],
-                backgroundColor: "rgb(143, 139, 102)"
+                backgroundColor: "rgba(255, 99, 132, 0.6)",
+                pointStyle: "rectRot"
             },
             {
                 label: "UI/UX Designer",
@@ -37,7 +39,8 @@ const SalariesScatterChart = () => {
                         y: 7
                     },
                 ],
-                backgroundColor: "rgb(217, 80, 48)"
+                backgroundColor: "rgba(54, 162, 235, 0.6)",
+                pointStyle: "rect"
             },
             {
                 label: "Product Manager",
@@ -47,7 +50,8 @@ const SalariesScatterChart = () => {
                         y: 10
                     },
                 ],
-                backgroundColor: "rgb(89, 35, 33)"
+                backgroundColor: "rgba(255, 206, 86, 0.6)",
+                pointStyle: "rectRounded"
             },
             {
                 label: "DevOps Engineer",
@@ -57,7 +61,8 @@ const SalariesScatterChart = () => {
                         y: 2
                     }
                 ],
-                backgroundColor: "rgb(45, 87, 44)"
+                backgroundColor: "rgba(153, 102, 255, 0.6)",
+                pointStyle: "triangle"
             }
         ]
     };
@@ -75,6 +80,7 @@ const SalariesScatterChart = () => {
         scales: {
             x: {
                 display: true,
+                min: 0,
                 title: {
                     display: true,
                     text: "Average Amount of Applicants",
@@ -86,6 +92,7 @@ const SalariesScatterChart = () => {
             },
             y: {
                 display: true,
+                min: 0,
                 title: {
                     display: true,
                     text: "Average Amount of Experience Required (Years)",
@@ -97,6 +104,11 @@ const SalariesScatterChart = () => {
             }
         },
         plugins: {
+            legend: {
+                labels: {
+                    usePointStyle: true
+                }
+            },
             title: {
                 display: true,
                 text: "Average Amount of Experience Required vs. Average Amount of Applicants, by Profession",

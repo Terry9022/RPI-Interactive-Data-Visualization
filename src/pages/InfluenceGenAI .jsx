@@ -16,7 +16,7 @@ const InfluenceGenAI = () => {
         </div>
       </div>
       <div style={{ width: "60%", height: "600px", margin: "auto" }}>
-        <LayoffsByJobRoleChart />
+        {/* <LayoffsByJobRoleChart /> */}
         <div className="m-[30px]"></div>
         <LayoffsByYearChart />
       </div>

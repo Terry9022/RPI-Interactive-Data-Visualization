@@ -18,7 +18,7 @@ const Salaries = () => {
       <div style={{ width: "60%", height: "600px", margin: "auto" }}>
         <SalariesBarChart />
         <div className="m-[30px]"></div>
-        <SalariesScatterChart />
+        {/* <SalariesScatterChart /> */}
       </div>
     </div>
   );

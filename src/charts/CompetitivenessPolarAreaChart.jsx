@@ -5,30 +5,22 @@ import { useRef } from "react";
 Chart.register();
 
 const SalariesPolarAreaChart = () => {
-    var applicantsData = [800,500,200,250,300]
-    var experienceData = [6,5,7,10,2]
+    var applicantsData = [800,500,300,250,200]
+    var applicantsLabels = ["Software Engineer","Data Scientist","DevOps Engineer","Product Manager","UI/UX Designer"]
+    var applicantsBgColors = ["rgba(75, 192, 192, 0.6)","rgba(255, 99, 132, 0.6)","rgba(153, 102, 255, 0.6)","rgba(255, 206, 86, 0.6)","rgba(54, 162, 235, 0.6)"]
+    var experienceData = [10,7,6,5,2]
+    var experienceLabels = ["Product Manager","UI/UX Designer","Software Engineer","Data Scientist","DevOps Engineer"]
+    var experienceBgColors = ["rgba(255, 206, 86, 0.6)","rgba(54, 162, 235, 0.6)","rgba(75, 192, 192, 0.6)","rgba(255, 99, 132, 0.6)","rgba(153, 102, 255, 0.6)"]
     var dataState = "applicants"
 
     const chartRef = useRef(null)
 
     const data = {
-        labels: [
-            "Software Engineer",
-            "Data Scientist",
-            "UI/UX Designer",
-            "Product Manager",
-            "DevOps Engineer",
-        ],
+        labels: applicantsLabels,
         datasets: [
             {
                 data: applicantsData,
-                backgroundColor: [
-                    "rgb(109, 101, 82)",
-                    "rgb(143, 139, 102)",
-                    "rgb(217, 80, 48)",
-                    "rgb(89, 35, 33)",
-                    "rgb(45, 87, 44)"
-                ]
+                backgroundColor: applicantsBgColors
             }
         ],
     };
@@ -36,14 +28,18 @@ const SalariesPolarAreaChart = () => {
     function toggleChartData() {
         if(dataState == "applicants") {
             dataState = "experience"
+            chartRef.current.data.labels = experienceLabels
             chartRef.current.data.datasets[0].data = experienceData
+            chartRef.current.data.datasets[0].backgroundColor = experienceBgColors
             chartRef.current.options.plugins.title.text = "Average Amount of Experience (Years) Required by Profession"
             document.getElementById("togglePolarAreaChartData").innerHTML = "Compare Amount of Applicants"
             chartRef.current.update()
         }
         else if(dataState == "experience") {
             dataState = "applicants"
+            chartRef.current.data.labels = applicantsLabels
             chartRef.current.data.datasets[0].data = applicantsData
+            chartRef.current.data.datasets[0].backgroundColor = applicantsBgColors
             chartRef.current.options.plugins.title.text = "Average Amount of Applicants by Profession"
             document.getElementById("togglePolarAreaChartData").innerHTML = "Compare Amount of Experience Required"
             chartRef.current.update()
