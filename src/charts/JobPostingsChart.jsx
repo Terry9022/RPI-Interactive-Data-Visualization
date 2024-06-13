@@ -85,6 +85,11 @@ const JobPostingsChart = () => {
     },
     scales: {
       r: {
+        pointLabels: {
+          font: {
+            size: 16, // Increase the font size
+          },
+        },
         angleLines: {
           display: false,
         },
