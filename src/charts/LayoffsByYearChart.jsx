@@ -27,10 +27,10 @@ Chart.register(
 );
 
 const LayoffsByYearChart = () => {
-  const [showChatGPTLine, setShowChatGPTLine] = useState(true);
-  const [showSoftwareEngineer, setShowSoftwareEngineer] = useState(true);
-  const [showDataScientist, setShowDataScientist] = useState(true);
-  const [showUIUXDesigner, setShowUIUXDesigner] = useState(true);
+  const [showChatGPTLine, setShowChatGPTLine] = useState(false);
+  const [showSoftwareEngineer, setShowSoftwareEngineer] = useState(false);
+  const [showDataScientist, setShowDataScientist] = useState(false);
+  const [showUIUXDesigner, setShowUIUXDesigner] = useState(false);
   const [showProductManager, setShowProductManager] = useState(true);
   const [showDevOpsEngineer, setShowDevOpsEngineer] = useState(true);
 

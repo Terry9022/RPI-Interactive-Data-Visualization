@@ -21,12 +21,12 @@ Chart.register(
 
 const JobPostingsChart = () => {
   const [showSoftwareEngineer, setShowSoftwareEngineer] = useState(true);
-  const [showDataScientist, setShowDataScientist] = useState(true);
+  const [showDataScientist, setShowDataScientist] = useState(false);
   const [showUIUXDesigner, setShowUIUXDesigner] = useState(true);
   const [showProductManager, setShowProductManager] = useState(true);
   const [showDevOpsEngineer, setShowDevOpsEngineer] = useState(true);
   const [showJuniorLevel, setShowJuniorLevel] = useState(true);
-  const [showSeniorLevel, setShowSeniorLevel] = useState(true);
+  const [showSeniorLevel, setShowSeniorLevel] = useState(false);
 
   const juniorLevelData = [
     showSoftwareEngineer && 100,
