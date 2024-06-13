@@ -198,7 +198,7 @@ const LayoffsByYearChart = () => {
           <label className="flex items-center space-x-2 cursor-pointer">
             <input
               type="checkbox"
-              className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+              className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
               checked={showChatGPTLine}
               onChange={handleToggleChatGPTLine}
             />
@@ -216,7 +216,7 @@ const LayoffsByYearChart = () => {
             <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="checkbox"
-                className="form-checkbox h-5 w-5 transition duration-150 ease-in-out"
+                className="form-checkbox h-5 w-5 transition duration-150 ease-in-out cursor-pointer"
                 style={{
                   accentColor: "rgba(75, 192, 192, 0.2)",
                 }}
@@ -230,7 +230,7 @@ const LayoffsByYearChart = () => {
             <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
                   accentColor: "rgba(255, 99, 132, 0.2)",
                 }}
@@ -244,7 +244,7 @@ const LayoffsByYearChart = () => {
             <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
                   accentColor: "rgba(54, 162, 235, 0.2)",
                 }}
@@ -258,7 +258,7 @@ const LayoffsByYearChart = () => {
             <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
                   accentColor: "rgba(255, 206, 86, 0.2)",
                 }}
@@ -272,7 +272,7 @@ const LayoffsByYearChart = () => {
             <label className="flex items-center space-x-2 cursor-pointer">
               <input
                 type="checkbox"
-                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out "
+                className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
                   accentColor: "rgba(177, 139, 252, 0.6)",
                 }}

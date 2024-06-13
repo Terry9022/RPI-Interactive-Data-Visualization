@@ -109,7 +109,7 @@ const JobPostingsChart = () => {
                     type="checkbox"
                     checked={selectedCareers.includes(career)}
                     onChange={() => handleCareerChange(career)}
-                    className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                    className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                   />
                   <span className="text-gray-700 font-medium select-none">
                     {career}
@@ -127,7 +127,7 @@ const JobPostingsChart = () => {
                     type="checkbox"
                     checked={selectedLevels.includes(level)}
                     onChange={() => handleLevelChange(level)}
-                    className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
+                    className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                   />
                   <span className="text-gray-700 font-medium select-none">
                     {level}

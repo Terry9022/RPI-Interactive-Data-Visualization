@@ -142,7 +142,7 @@ const SalariesBarChart = () => {
                                     className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                                     checked={showSoftwareEngineer}
                                     onChange={() => setShowSoftwareEngineer(!showSoftwareEngineer)}
-                                    style={{accentColor: "#4bc0c099"}}
+                                    style={{accentColor: "#4bc0c099", cursor: "pointer"}}
                                 />
                                 <span className="text-gray-700 font-medium select-none">
                                     Software Engineer
@@ -154,7 +154,7 @@ const SalariesBarChart = () => {
                                     className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                                     checked={showDataScientist}
                                     onChange={() => setShowDataScientist(!showDataScientist)}
-                                    style={{accentColor:"#ff638499"}}
+                                    style={{accentColor:"#ff638499", cursor: "pointer"}}
                                 />
                                 <span className="text-gray-700 font-medium select-none">
                                     Data Scientist
@@ -166,7 +166,7 @@ const SalariesBarChart = () => {
                                     className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                                     checked={showUIUXDesigner}
                                     onChange={() => setShowUIUXDesigner(!showUIUXDesigner)}
-                                    style={{accentColor:"#36a2eb99"}}
+                                    style={{accentColor:"#36a2eb99", cursor: "pointer"}}
                                 />
                                 <span className="text-gray-700 font-medium select-none">
                                     UI/UX Designer
@@ -178,7 +178,7 @@ const SalariesBarChart = () => {
                                     className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                                     checked={showProductManager}
                                     onChange={() => setShowProductManager(!showProductManager)}
-                                    style={{accentColor:"#ffce5699"}}
+                                    style={{accentColor:"#ffce5699", cursor: "pointer"}}
                                 />
                                 <span className="text-gray-700 font-medium select-none">
                                     Product Manager
@@ -190,7 +190,7 @@ const SalariesBarChart = () => {
                                     className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                                     checked={showDevOpsEngineer}
                                     onChange={() => setShowDevOpsEngineer(!showDevOpsEngineer)}
-                                    style={{accentColor:"#b18bfc99"}}
+                                    style={{accentColor:"#b18bfc99", cursor: "pointer"}}
                                 />
                                 <span className="text-gray-700 font-medium select-none">
                                     DevOps Engineer
