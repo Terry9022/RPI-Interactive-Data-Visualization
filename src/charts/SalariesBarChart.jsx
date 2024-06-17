@@ -132,9 +132,9 @@ const SalariesBarChart = () => {
 
   return (
     <div>
-      <div className="flex" style={{ width: "80%", margin: "auto" }}>
+      <div className="flex">
         <div className="w-3/4 mr-10">
-          <Bar data={data} options={options} ref={chartRef} />
+          <Bar data={data} options={options} ref={chartRef}/>
         </div>
         <div className="w-1/4 pl-4 relative top-[100px]">
           <div className="bg-white shadow-md rounded-md p-4">

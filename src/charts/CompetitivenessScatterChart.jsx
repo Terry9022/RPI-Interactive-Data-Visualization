@@ -138,7 +138,7 @@ const CompetitivenessScatterChart = () => {
   };
 
   return (
-    <div className="flex" style={{ width: "80%", margin: "auto" }}>
+    <div className="flex">
       <div className="w-3/4 mr-10">
         <Scatter data={data} options={options} ref={chartRef} />
       </div>
