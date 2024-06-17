@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
   return (
     <div
-      className="relative h-screen bg-cover bg-center"
+      className="relative h-screen bg-cover bg-center overflow-scroll"
       style={{ backgroundImage: "url('background-image.jpg')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>

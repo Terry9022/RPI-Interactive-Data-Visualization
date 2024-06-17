@@ -4,7 +4,7 @@ import { BsArrowLeft } from "react-icons/bs";
 const ImpactOfAIPage = () => {
   return (
     <div
-      className="relative bg-cover bg-center min-h-screen"
+      className="relative bg-cover bg-center min-h-screen overflow-scroll"
       style={{ backgroundImage: "url('background-image.jpg')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
