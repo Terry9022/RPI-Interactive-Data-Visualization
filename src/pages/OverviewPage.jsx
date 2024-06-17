@@ -4,7 +4,7 @@ import { BsArrowLeft } from "react-icons/bs";
 const OverviewPage = () => {
   return (
     <div
-      className="relative bg-cover bg-center min-h-screen overflow-scroll"
+      className="relative bg-cover bg-center min-h-screen overflow-y-scroll"
       style={{ backgroundImage: "url('background-image.jpg')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -93,7 +93,7 @@ const OverviewPage = () => {
           major companies like Google, Microsoft, Amazon, Apple, and Facebook
           leading the way in technological innovation and advancement.
         </p>
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center pb-12">
           <Link
             to="/impact-of-ai"
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-6 px-6 rounded text-xl "
