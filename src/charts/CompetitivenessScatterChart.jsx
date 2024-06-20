@@ -112,7 +112,7 @@ const CompetitivenessScatterChart = () => {
     plugins: {
       legend: {
         labels: {
-          usePointStyle: true,
+          usePointStyle: true
         },
       },
       title: {
@@ -137,10 +137,25 @@ const CompetitivenessScatterChart = () => {
     },
   };
 
+
   return (
     <div className="flex">
       <div className="w-3/4 mr-10">
-        <Scatter data={data} options={options} ref={chartRef} />
+        <Scatter data={data} options={options} ref={chartRef} plugins={[
+          {
+            id: "increase-legend-spacing",
+            beforeInit(chart) {
+              // Get reference to the original fit function
+              const originalFit = (chart.legend).fit;
+              // Override the fit function
+              (chart.legend).fit = function fit() {
+                // Call original function and bind scope in order to use `this` correctly inside it
+                originalFit.bind(chart.legend)();
+                this.height += 20;
+              };
+            }
+          }
+        ]}/>
       </div>
       <div className="w-1/4 pl-4 relative top-[100px]">
         <div className="bg-white shadow-md rounded-md p-4">
