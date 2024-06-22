@@ -57,7 +57,7 @@ const LayoffsByYearChart = () => {
           { x: "2024-01-01", y: 5000 },
         ],
         borderColor: "rgba(75, 192, 192, 1)",
-        backgroundColor: "rgba(75, 192, 192, 0.2)",
+        backgroundColor: "rgba(75, 192, 192, 1)",
         fill: false,
       },
       showDataScientist && {
@@ -72,7 +72,7 @@ const LayoffsByYearChart = () => {
           { x: "2024-01-01", y: 3500 },
         ],
         borderColor: "rgba(255, 99, 132, 1)",
-        backgroundColor: "rgba(255, 99, 132, 0.2)",
+        backgroundColor: "rgba(255, 99, 132, 1)",
         fill: false,
       },
       showUIUXDesigner && {
@@ -87,7 +87,7 @@ const LayoffsByYearChart = () => {
           { x: "2024-01-01", y: 3000 },
         ],
         borderColor: "rgba(54, 162, 235, 1)",
-        backgroundColor: "rgba(54, 162, 235, 0.2)",
+        backgroundColor: "rgba(54, 162, 235, 1)",
         fill: false,
       },
       showProductManager && {
@@ -102,7 +102,7 @@ const LayoffsByYearChart = () => {
           { x: "2024-01-01", y: 1500 },
         ],
         borderColor: "rgba(255, 206, 86, 1)",
-        backgroundColor: "rgba(255, 206, 86, 0.2)",
+        backgroundColor: "rgba(255, 206, 86, 1)",
         fill: false,
       },
       showDevOpsEngineer && {
@@ -117,7 +117,7 @@ const LayoffsByYearChart = () => {
           { x: "2024-01-01", y: 1800 },
         ],
         borderColor: "rgba(153, 102, 255, 1)",
-        backgroundColor: "rgba(153, 102, 255, 0.2)",
+        backgroundColor: "rgba(153, 102, 255, 1)",
         fill: false,
       },
     ].filter(Boolean),
@@ -218,7 +218,7 @@ const LayoffsByYearChart = () => {
                 type="checkbox"
                 className="form-checkbox h-5 w-5 transition duration-150 ease-in-out cursor-pointer"
                 style={{
-                  accentColor: "rgba(75, 192, 192, 0.2)",
+                  accentColor: "rgba(75, 192, 192, 1)",
                 }}
                 checked={showSoftwareEngineer}
                 onChange={() => setShowSoftwareEngineer(!showSoftwareEngineer)}
@@ -232,7 +232,7 @@ const LayoffsByYearChart = () => {
                 type="checkbox"
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
-                  accentColor: "rgba(255, 99, 132, 0.2)",
+                  accentColor: "rgba(255, 99, 132, 1)",
                 }}
                 checked={showDataScientist}
                 onChange={() => setShowDataScientist(!showDataScientist)}
@@ -246,7 +246,7 @@ const LayoffsByYearChart = () => {
                 type="checkbox"
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
-                  accentColor: "rgba(54, 162, 235, 0.2)",
+                  accentColor: "rgba(54, 162, 235, 1)",
                 }}
                 checked={showUIUXDesigner}
                 onChange={() => setShowUIUXDesigner(!showUIUXDesigner)}
@@ -260,7 +260,7 @@ const LayoffsByYearChart = () => {
                 type="checkbox"
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
-                  accentColor: "rgba(255, 206, 86, 0.2)",
+                  accentColor: "rgba(255, 206, 86, 1)",
                 }}
                 checked={showProductManager}
                 onChange={() => setShowProductManager(!showProductManager)}
@@ -274,7 +274,7 @@ const LayoffsByYearChart = () => {
                 type="checkbox"
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out cursor-pointer"
                 style={{
-                  accentColor: "rgba(177, 139, 252, 0.6)",
+                  accentColor: "rgba(177, 139, 252, 1)",
                 }}
                 checked={showDevOpsEngineer}
                 onChange={() => setShowDevOpsEngineer(!showDevOpsEngineer)}

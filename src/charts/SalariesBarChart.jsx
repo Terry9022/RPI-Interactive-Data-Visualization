@@ -18,27 +18,27 @@ const SalariesBarChart = () => {
     showSoftwareEngineer && {
       label: "Software Engineer",
       data: [80000, 120000],
-      backgroundColor: "#4bc0c099",
+      backgroundColor: "#4bc0c0",
     },
     showDataScientist && {
       label: "Data Scientist",
       data: [80000, 100000],
-      backgroundColor: "#ff638499",
+      backgroundColor: "#ff6384",
     },
     showUIUXDesigner && {
       label: "UI/UX Designer",
       data: [60000, 80000],
-      backgroundColor: "#36a2eb99",
+      backgroundColor: "#36a2eb",
     },
     showProductManager && {
       label: "Product Manager",
       data: [150000, 200000],
-      backgroundColor: "#ffce5699",
+      backgroundColor: "#ffce56",
     },
     showDevOpsEngineer && {
       label: "DevOps Engineer",
       data: [75000, 100000],
-      backgroundColor: "#b18bfc99",
+      backgroundColor: "#b18bfc",
     },
   ].filter(Boolean);
 
@@ -46,27 +46,27 @@ const SalariesBarChart = () => {
     showSoftwareEngineer && {
       label: "Software Engineer",
       data: [100000, 180000],
-      backgroundColor: "rgba(75, 192, 192, 0.6)",
+      backgroundColor: "#4bc0c0",
     },
     showDataScientist && {
       label: "Data Scientist",
       data: [120000, 175000],
-      backgroundColor: "rgba(255, 99, 132, 0.6)",
+      backgroundColor: "#ff6384",
     },
     showUIUXDesigner && {
       label: "UI/UX Designer",
       data: [75000, 120000],
-      backgroundColor: "rgba(54, 162, 235, 0.6)",
+      backgroundColor: "#36a2eb",
     },
     showProductManager && {
       label: "Product Manager",
       data: [200000, 250000],
-      backgroundColor: "rgba(255, 206, 86, 0.6)",
+      backgroundColor: "#ffce56",
     },
     showDevOpsEngineer && {
       label: "DevOps Engineer",
       data: [100000, 150000],
-      backgroundColor: "rgba(153, 102, 255, 0.6)",
+      backgroundColor: "#b18bfc",
     },
   ].filter(Boolean);
 
@@ -148,7 +148,7 @@ const SalariesBarChart = () => {
                   onChange={() =>
                     setShowSoftwareEngineer(!showSoftwareEngineer)
                   }
-                  style={{ accentColor: "#4bc0c099", cursor: "pointer" }}
+                  style={{ accentColor: "#4bc0c0", cursor: "pointer" }}
                 />
                 <span className="text-gray-700 font-medium select-none">
                   Software Engineer
@@ -160,7 +160,7 @@ const SalariesBarChart = () => {
                   className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                   checked={showDataScientist}
                   onChange={() => setShowDataScientist(!showDataScientist)}
-                  style={{ accentColor: "#ff638499", cursor: "pointer" }}
+                  style={{ accentColor: "#ff6384", cursor: "pointer" }}
                 />
                 <span className="text-gray-700 font-medium select-none">
                   Data Scientist
@@ -172,7 +172,7 @@ const SalariesBarChart = () => {
                   className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                   checked={showUIUXDesigner}
                   onChange={() => setShowUIUXDesigner(!showUIUXDesigner)}
-                  style={{ accentColor: "#36a2eb99", cursor: "pointer" }}
+                  style={{ accentColor: "#36a2eb", cursor: "pointer" }}
                 />
                 <span className="text-gray-700 font-medium select-none">
                   UI/UX Designer
@@ -184,7 +184,7 @@ const SalariesBarChart = () => {
                   className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                   checked={showProductManager}
                   onChange={() => setShowProductManager(!showProductManager)}
-                  style={{ accentColor: "#ffce5699", cursor: "pointer" }}
+                  style={{ accentColor: "#ffce56", cursor: "pointer" }}
                 />
                 <span className="text-gray-700 font-medium select-none">
                   Product Manager
@@ -196,7 +196,7 @@ const SalariesBarChart = () => {
                   className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                   checked={showDevOpsEngineer}
                   onChange={() => setShowDevOpsEngineer(!showDevOpsEngineer)}
-                  style={{ accentColor: "#b18bfc99", cursor: "pointer" }}
+                  style={{ accentColor: "#b18bfc", cursor: "pointer" }}
                 />
                 <span className="text-gray-700 font-medium select-none">
                   DevOps Engineer

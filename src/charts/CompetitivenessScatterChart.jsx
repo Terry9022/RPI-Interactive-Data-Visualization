@@ -23,7 +23,7 @@ const CompetitivenessScatterChart = () => {
             y: 6,
           },
         ],
-        backgroundColor: "#4bc0c099",
+        backgroundColor: "#4bc0c0",
         pointStyle: "circle",
       },
       showDataScientist && {
@@ -34,7 +34,7 @@ const CompetitivenessScatterChart = () => {
             y: 5,
           },
         ],
-        backgroundColor: "#ff638499",
+        backgroundColor: "#ff6384",
         pointStyle: "rectRot",
       },
       showUIUXDesigner && {
@@ -45,7 +45,7 @@ const CompetitivenessScatterChart = () => {
             y: 7,
           },
         ],
-        backgroundColor: "#36a2eb99",
+        backgroundColor: "#36a2eb",
         pointStyle: "rect",
       },
       showProductManager && {
@@ -56,7 +56,7 @@ const CompetitivenessScatterChart = () => {
             y: 10,
           },
         ],
-        backgroundColor: "#ffce5699",
+        backgroundColor: "#ffce56",
         pointStyle: "rectRounded",
       },
       showDevOpsEngineer && {
@@ -67,7 +67,7 @@ const CompetitivenessScatterChart = () => {
             y: 2,
           },
         ],
-        backgroundColor: "#b18bfc99",
+        backgroundColor: "#b18bfc",
         pointStyle: "triangle",
       },
     ].filter(Boolean),
@@ -80,7 +80,7 @@ const CompetitivenessScatterChart = () => {
     },
     elements: {
       point: {
-        radius: 10,
+        radius: 14,
       },
     },
     scales: {
@@ -91,7 +91,7 @@ const CompetitivenessScatterChart = () => {
           display: true,
           text: "Average Amount of Applicants",
           font: {
-            size: 14,
+            size: 18,
           },
           padding: 30,
         },
@@ -103,7 +103,7 @@ const CompetitivenessScatterChart = () => {
           display: true,
           text: "Average Amount of Experience Required (Years)",
           font: {
-            size: 14,
+            size: 18,
           },
           padding: 30,
         },
@@ -112,6 +112,9 @@ const CompetitivenessScatterChart = () => {
     plugins: {
       legend: {
         labels: {
+          font: {
+            size: 16
+          },
           usePointStyle: true
         },
       },
@@ -119,7 +122,7 @@ const CompetitivenessScatterChart = () => {
         display: true,
         text: "Average Amount of Experience Required vs. Average Amount of Applicants, by Profession",
         font: {
-          size: 14,
+          size: 18,
         },
       },
       tooltip: {
@@ -151,7 +154,7 @@ const CompetitivenessScatterChart = () => {
               (chart.legend).fit = function fit() {
                 // Call original function and bind scope in order to use `this` correctly inside it
                 originalFit.bind(chart.legend)();
-                this.height += 20;
+                this.height += 50;
               };
             }
           }
@@ -167,7 +170,7 @@ const CompetitivenessScatterChart = () => {
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                 checked={showSoftwareEngineer}
                 onChange={() => setShowSoftwareEngineer(!showSoftwareEngineer)}
-                style={{ accentColor: "#4bc0c099", cursor: "pointer" }}
+                style={{ accentColor: "#4bc0c0", cursor: "pointer" }}
               />
               <span className="text-gray-700 font-medium select-none">
                 Software Engineer
@@ -179,7 +182,7 @@ const CompetitivenessScatterChart = () => {
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                 checked={showDataScientist}
                 onChange={() => setShowDataScientist(!showDataScientist)}
-                style={{ accentColor: "#ff638499", cursor: "pointer" }}
+                style={{ accentColor: "#ff6384", cursor: "pointer" }}
               />
               <span className="text-gray-700 font-medium select-none">
                 Data Scientist
@@ -191,7 +194,7 @@ const CompetitivenessScatterChart = () => {
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                 checked={showUIUXDesigner}
                 onChange={() => setShowUIUXDesigner(!showUIUXDesigner)}
-                style={{ accentColor: "#36a2eb99", cursor: "pointer" }}
+                style={{ accentColor: "#36a2eb", cursor: "pointer" }}
               />
               <span className="text-gray-700 font-medium select-none">
                 UI/UX Designer
@@ -203,7 +206,7 @@ const CompetitivenessScatterChart = () => {
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                 checked={showProductManager}
                 onChange={() => setShowProductManager(!showProductManager)}
-                style={{ accentColor: "#ffce5699", cursor: "pointer" }}
+                style={{ accentColor: "#ffce56", cursor: "pointer" }}
               />
               <span className="text-gray-700 font-medium select-none">
                 Product Manager
@@ -215,7 +218,7 @@ const CompetitivenessScatterChart = () => {
                 className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                 checked={showDevOpsEngineer}
                 onChange={() => setShowDevOpsEngineer(!showDevOpsEngineer)}
-                style={{ accentColor: "#b18bfc99", cursor: "pointer" }}
+                style={{ accentColor: "#b18bfc", cursor: "pointer" }}
               />
               <span className="text-gray-700 font-medium select-none">
                 DevOps Engineer
