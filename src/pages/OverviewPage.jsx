@@ -53,12 +53,23 @@ const OverviewPage = () => {
           </div>
         </ul>
       </nav>
-      <div className="relative py-12 px-8 bg-slate-700 bg-opacity-60 h-screen ">
-        <h1 className="text-4xl font-bold text-white mb-8  mt-12">
-          Overview of the Computer Science Industry
-        </h1>
+      <div className="relative py-12 px-8 bg-slate-700 bg-opacity-60 ">
+        <div className="flex gap-20">
+          <h1 className="text-4xl font-bold text-white mb-8  mt-12">
+            Background Information about the Computer Science Industry
+          </h1>
+          <div className="mt-12 text-center pb-12">
+            <Link
+              to="/purpose"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-6 px-6 rounded text-xl "
+            >
+              Next: Purpose of Website
+            </Link>
+          </div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
+            <br></br>
             <p className="text-white text-2xl mb-4">
               The Computer Science (CS) industry is a rapidly growing and
               dynamic field that encompasses a wide range of disciplines and
@@ -66,9 +77,34 @@ const OverviewPage = () => {
               processing, and the design of computer systems and software.
             </p>
             <p className="text-white text-2xl mb-4">
-              The CS industry can be divided into various fields, including:
+              The CS industry can be divided into various fields, including Software Engineering, Data Science, and Cybersecurity.
             </p>
-            <ul className="text-white text-2xl list-disc pl-6 mb-4">
+            <p className="text-white text-2xl mt-8">
+              The CS industry has a significant impact on various sectors, with
+              major companies like Google, Microsoft, Amazon, Apple, and Facebook
+              leading the way in technological innovation and advancement.
+            </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <p className="text-white text-2xl mb-4">
+              Generative AI has brought about significant changes in the computer
+              science industry, with both positive and negative impacts.
+            </p>
+            <p className="text-white text-2xl mb-4">
+              On the positive side, generative AI has opened up new possibilities for
+              creative applications, such as generating realistic images, text,
+              and music. It has also enabled the automation of certain tasks,
+              improving efficiency and productivity.
+            </p>
+            <p className="text-white text-2xl mb-4">
+              However, the rise of generative AI has also raised concerns about
+              job displacement and the potential misuse of the technology. As AI
+              models become more advanced, there is a risk of certain roles
+              becoming automated, leading to job losses in some sectors.
+            </p>
+            {/* <ul className="text-white text-2xl list-disc pl-6 mb-4">
               <li>Software Engineering</li>
               <li>Data Science</li>
               <li>Artificial Intelligence and Machine Learning</li>
@@ -77,29 +113,24 @@ const OverviewPage = () => {
               <li>Cloud Computing</li>
               <li>Database Management</li>
               <li>Computer Graphics and Visualization</li>
-            </ul>
+            </ul> */}
           </div>
           <div>
+            <br></br>
             <img
               src="2.jpeg"
               alt="CS Industry"
               className="w-full mb-4 rounded"
               style={{ width: "auto", height: "400px" }}
             />
+            <br></br>
+            <img
+              src="5.png"
+              alt="History of AI"
+              className="w-full mb-4 rounded"
+              style={{ width: "auto", height: "400px" }}
+            />
           </div>
-        </div>
-        <p className="text-white text-2xl mt-8">
-          The CS industry has a significant impact on various sectors, with
-          major companies like Google, Microsoft, Amazon, Apple, and Facebook
-          leading the way in technological innovation and advancement.
-        </p>
-        <div className="mt-12 text-center pb-12">
-          <Link
-            to="/impact-of-ai"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-6 px-6 rounded text-xl "
-          >
-            Next: Impact of AI
-          </Link>
         </div>
       </div>
     </div>

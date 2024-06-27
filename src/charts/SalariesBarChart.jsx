@@ -132,6 +132,16 @@ const SalariesBarChart = () => {
 
   return (
     <div>
+      <div style={{ width: "40%", marginLeft: "20%" }}>
+        <button
+          style={{ width: "100%" }}
+          id="toggleBarChartData"
+          className="bg-blue-500 rounded text-white p-2 m-5 hover:bg-blue-600"
+          onClick={toggleDataState}
+        >
+          Compare Salary Maximums
+        </button>
+      </div>
       <div className="flex">
         <div className="w-3/4 mr-10">
           <Bar data={data} options={options} ref={chartRef}/>
@@ -205,16 +215,6 @@ const SalariesBarChart = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div style={{ width: "40%", marginLeft: "20%" }}>
-        <button
-          style={{ width: "100%" }}
-          id="toggleBarChartData"
-          className="bg-blue-500 rounded text-white p-2 m-5 hover:bg-blue-600"
-          onClick={toggleDataState}
-        >
-          Compare Salary Maximums
-        </button>
       </div>
     </div>
   );
